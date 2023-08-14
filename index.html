@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boom Jquery Magic Show</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-image: url(img/bg.jpg);
+            background-size: cover;
+            /* Scale the image to cover the entire container */
+            background-repeat: no-repeat;
+            /* Prevent image repetition */
+            background-attachment: fixed;
+            background-color: rgba(0, 0, 0, 0.5);
+            background-blend-mode: darken;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1 id="intro" style="color: white; text-align: center;"></h1>
+        <div class="tabs">
+            <button class="tab-button active" data-tab="tab1">পাখির জাদু</button>
+            <button class="tab-button" data-tab="tab2">পাতার জাদু</button>
+            <button class="tab-button" data-tab="tab3">লাল ঢিশুম</button>
+            <button class="tab-button" data-tab="tab4">বিড়াল ঘুমায়
+            </button>
+            <button class="tab-button" data-tab="tab5">ভূতের ম্যাজিক</button>
+            <button class="tab-button" data-tab="tab6">মুশকিল ঈ আসান</button>
+        </div>
+        <div class="tab-content" id="tab1">
+            <div style="">
+                <div style="text-align: center; color: white;">
+                    <h1>* এখানে Hide বাটনে ক্লিক করলে পাখি গায়েব হয়ে যাবে। </h1>
+                    <h1>* আবার Show বাটনে ক্লিক করলে পাখি ফিরে আসবে </h1>
+                    <h4 class="cool"> <img src="img/pegion.png" alt="">
+                    </h4>
+                </div>
+                <section>
+                    <div class="button-container">
+                        <button id="show" class="button">
+                            <span class="button-icon">⬆️</span> Show
+                        </button>
+                        <button id="hide" class="button">
+                            <span class="button-icon">⬇️</span> Hide
+                        </button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        </div>
+        <div class="tab-content" id="tab2">
+            <div>
+                <h4 style="color: white; text-align: center;">দুইবার পাতায় ক্লিক করুন। সে গায়েব হয়ে যাবে। তাকে ফিরিয়ে
+                    আনতে
+                    হলে
+                    রিলোড দিয়ে "পাতার
+                    জাদু" ট্যাবে পুনরায় ক্লিক করুন.</h4>
+                <section id="pata-section">
+                    <div id="fiti">
+                        <img src="img/pata.gif" alt="">
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="tab-content" id="tab3">
+            <div id="fitboom" class="red-box">
+                <h2 class="danger-text">Touch Me <br> I'll ALert You</h2>
+            </div>
+        </div>
+        <div class="tab-content" id="tab4">
+            <h4 style="color: white; text-align: center;">বিড়াল ঘুমিয়ে আছে। ওকে ছুঁয়ে
+                চলে যেতে চাইলে এলার্ট পাবেন
+                । </h4>
+            <div id="bilai">
+                <img id="fitcool" src="img/biral.gif" alt="Your Bilai">
+            </div>
+        </div>
+        <div class="tab-content" id="tab5">
+            <div>
+                <h4 style="color: white; text-align: center;">মাউস দিয়ে গুতো মেরে ভুতকে গায়েব করে দিন </h4>
+                <h4 style="color: white; text-align: center;">রিলোড দিয়ে আবার ভুতের ম্যাজিক ট্যাবে ক্লিক করুন। ভূত এসে
+                    যাবে । </h4>
+            </div>
+            <!-- Content for Tab 5 -->
+            <div id="fithide" class="center-container">
+                <div class="image-container">
+                    <img class="center-image" src="img/Bhoot.gif" alt="Your Image">
+                </div>
+            </div>
+        </div>
+        <div class="tab-content" id="tab6">
+            <h1 style="text-align: center; color: white; font-weight: 800;">আপনার সমস্যা</h1>
+            <h4 id="fiths" style="color: tomato; background-color: rgba(11, 8, 8, 0.452);">সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা
+                সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+                সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা সমস্যা
+            </h4>
+            <!-- Content for Tab 6 -->
+            <div class="button-container">
+                <button id="showw" class="button">
+                    <span class="button-icon">⬆️</span> বাড়ান
+                </button>
+                <button id="hidee" class="button">
+                    <span class="button-icon">⬇️</span> কমান
+                </button>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ====================================== -->
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+
+    <script src="jquery.js"></script>
+</body>
+
+</html>
